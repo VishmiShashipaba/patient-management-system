@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediCare Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip" href="#main" id="skip">Skip to main content</a>
+    <div id="authWrap">
+        <section data-page="login" class="hide">
+            <div class="login">
+                <section class="hero" aria-label="Welcome"><img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDI4IDI4Ij48cmVjdCB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHJ4PSI4IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTEyIDZoNHY2aDZ2NGgtNnY2aC00di02SDZ2LTRoNnoiIGZpbGw9IiMxRDRFRDgiLz48L3N2Zz4K"
+                        alt="MediCare Hospital cross logo">
+                    <h1>Care that is always within reach</h1>
+                    <p>Book appointments, view records and pay online.</p>
+                </section>
+                <main id="authMain" class="lbox" tabindex="-1">
+                    <div class="lcard">
+                        <div class="lg"><img
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDI4IDI4Ij48cmVjdCB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHJ4PSI4IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTEyIDZoNHY2aDZ2NGgtNnY2aC00di02SDZ2LTRoNnoiIGZpbGw9IiMxRDRFRDgiLz48L3N2Zz4K"
+                                alt="">MediCare Hospital</div>
+                        <h1>Sign in</h1>
+                        <p class="muted" style="margin-bottom:18px">Use your email or username.</p>
+                        <form id="loginForm" novalidate aria-label="Login form">
+                            <label for="email">Email or username<input id="email" class="in" autocomplete="username"
+                                    aria-describedby="emailE"><span id="emailE" class="er"></span></label>
+                            <label for="pw">Password<input id="pw" type="password" class="in"
+                                    autocomplete="current-password" aria-describedby="pwE"><span id="pwE"
+                                    class="er"></span></label>
+                            <div class="row" style="justify-content:space-between;margin-bottom:16px">
+                                <label class="chk"><input type="checkbox" id="show"> Show password</label>
+                                <label class="chk"><input type="checkbox" id="remember"> Remember me</label>
+                            </div>
+                            <button class="btn full" type="submit">Login</button>
+                            <p style="margin-top:14px"><a href="#" id="forgot" class="lnk">Forgot password?</a></p>
+                            <p style="margin-top:8px">New patient? <a href="#register" class="lnk">Create an account</a>
+                            </p>
+                        </form>
+                        <p class="muted" style="margin-top:18px">Demo accounts:<br>patient@hospital.com /
+                            Patient@123<br>admin@hospital.com / Admin@123</p>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <section data-page="register" class="hide">
+            <div class="login">
+                <section class="hero" aria-label="Welcome"><img
+                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDI4IDI4Ij48cmVjdCB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHJ4PSI4IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTEyIDZoNHY2aDZ2NGgtNnY2aC00di02SDZ2LTRoNnoiIGZpbGw9IiMxRDRFRDgiLz48L3N2Zz4K"
+                        alt="MediCare Hospital cross logo">
+                    <h1>Join MediCare</h1>
+                    <p>Create a patient account to book appointments and view your records.</p>
+                </section>
+                <main id="authMain2" class="lbox" tabindex="-1">
+                    <div class="lcard">
+                        <h1>Patient registration</h1>
+                        <p class="muted" style="margin-bottom:18px">Fields marked * are required.</p>
+                        <form id="regForm" novalidate aria-label="Registration form">
+                            <label for="rname">Full name *<input id="rname" class="in" autocomplete="name"
+                                    aria-describedby="rnameE"><span id="rnameE" class="er"></span></label>
+                            <div class="g2"><label for="rage">Age *<input id="rage" type="number" class="in"
+                                        aria-describedby="rageE"><span id="rageE" class="er"></span></label>
+                                <label for="rphone">Phone *<input id="rphone" class="in" inputmode="tel"
+                                        placeholder="0771234567" aria-describedby="rphoneE"><span id="rphoneE"
+                                        class="er"></span></label>
+                            </div>
+                            <label for="remail">Email *<input id="remail" class="in" autocomplete="email"
+                                    aria-describedby="remailE"><span id="remailE" class="er"></span></label>
+                            <label for="rpw">Password * (8+ characters)<input id="rpw" type="password" class="in"
+                                    autocomplete="new-password" aria-describedby="rpwE"><span id="rpwE"
+                                    class="er"></span></label>
+                            <label for="rpw2">Confirm password *<input id="rpw2" type="password" class="in"
+                                    autocomplete="new-password" aria-describedby="rpw2E"><span id="rpw2E"
+                                    class="er"></span></label>
+                            <button class="btn full" type="submit">Register</button>
+                            <p style="margin-top:14px">Already registered? <a href="#login" class="lnk">Sign in</a></p>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </div>
+    <div class="app hide" id="appWrap">
+        <aside id="sidebar" class="sb" aria-label="Sidebar"></aside>
+        <div class="content">
+            <header class="top"><button id="menuBtn" class="menu" aria-label="Open navigation menu"
+                    aria-expanded="false">&#9776;</button><span id="who" class="muted"></span></header>
+            <main id="main" class="m" tabindex="-1">
+                <section data-page="dashboard" class="hide">
+                    <div class="head">
+                        <div>
+                            <h1 id="welcome">Welcome</h1>
+                            <p class="muted">Here is a summary of your care.</p>
+                        </div><a class="btn" href="#booking">Book Appointment</a>
+                    </div>
+                    <section class="card" id="profile" aria-labelledby="ph" style="margin-top:16px">
+                        <h2 id="ph">Patient profile</h2>
+                        <div id="profileBox" class="g4" style="margin:0"></div>
+                    </section>
+                    <section class="g4" id="pstats" aria-label="Summary"></section>
+                    <div class="g2">
+                        <section class="card" aria-labelledby="uh">
+                            <h2 id="uh">Upcoming appointments</h2>
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Doctor</th>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="upcoming"></tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="card" aria-labelledby="prh">
+                            <h2 id="prh">Previous appointments</h2>
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Doctor</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="previous"></tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="card" aria-labelledby="mh">
+                            <h2 id="mh">Medical records summary</h2>
+                            <ul id="summary" style="margin:0;padding-left:20px"></ul>
+                            <p style="margin-top:10px"><a class="lnk" href="#records">View all medical records</a></p>
+                        </section>
+                        <section class="card" aria-labelledby="lh">
+                            <h2 id="lh">Laboratory reports</h2>
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Test</th>
+                                            <th>Date</th>
+                                            <th>Result</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="labs"></tbody>
+                                </table>
+                            </div>
+                            <p style="margin-top:10px"><a class="lnk" href="#records/labs">Open lab reports</a></p>
+                        </section>
+                        <section class="card" aria-labelledby="rxh">
+                            <h2 id="rxh">Prescriptions</h2>
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Medicine</th>
+                                            <th>Dose</th>
+                                            <th>Duration</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="rx"></tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="card" aria-labelledby="payh">
+                            <h2 id="payh">Payment history</h2>
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Receipt</th>
+                                            <th>Description</th>
+                                            <th>Amount</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="pay"></tbody>
+                                </table>
+                            </div>
+                            <p style="margin-top:10px"><a class="lnk" href="#payment">Make a payment</a></p>
+                        </section>
+                    </div>
+                </section>
+                <section data-page="booking" class="hide">
+                    <h1>Book an appointment</h1>
+                    <p class="muted" style="margin-bottom:16px">Fields marked * are required.</p>
+                    <div class="split">
+                        <form id="bookForm" class="card" novalidate aria-label="Appointment booking form">
+                            <div class="g2">
+                                <label for="dept">Department *<select id="dept" class="in"
+                                        aria-describedby="deptE"></select><span id="deptE" class="er"></span></label>
+                                <label for="doctor">Doctor *<select id="doctor" class="in"
+                                        aria-describedby="doctorE"></select><span id="doctorE"
+                                        class="er"></span></label>
+                            </div>
+                            <label for="date">Appointment date *<input id="date" type="date" class="in"
+                                    aria-describedby="dateE"><span id="dateE" class="er"></span></label>
+                            <fieldset>
+                                <legend>Available time slots *</legend>
+                                <div id="slots" class="slots" role="group" aria-label="Time slots"></div><span
+                                    id="timeE" class="er" role="alert"></span>
+                            </fieldset>
+                            <div class="g2">
+                                <label for="pname">Patient name<input id="pname" class="in" readonly></label>
+                                <label for="pphone">Phone number *<input id="pphone" class="in" inputmode="tel"
+                                        placeholder="0771234567" aria-describedby="phoneE"><span id="phoneE"
+                                        class="er"></span></label>
+                            </div>
+                            <label for="reason">Appointment description *<textarea id="reason" class="in" rows="3"
+                                    aria-describedby="reasonE"></textarea><span id="reasonE" class="er"></span></label>
+                            <button class="btn" type="submit">Confirm Booking</button>
+                        </form>
+                        <aside class="card" aria-labelledby="bsh">
+                            <h2 id="bsh">Booking summary</h2>
+                            <div id="bsum" class="muted"></div>
+                            <div id="bdone" class="hide" style="margin-top:14px"></div>
+                        </aside>
+                    </div>
+                </section>
+                <section data-page="records" class="hide">
+                    <h1>Medical records</h1>
+                    <section class="card" id="pinfo" style="margin-top:12px" aria-label="Patient information"></section>
+                    <div class="tabs" role="tablist" aria-label="Record sections" id="tabs"></div>
+                    <div id="panel" class="card" role="tabpanel" tabindex="0"></div>
+                </section>
+                <section data-page="payment" class="hide">
+                    <h1>Online payment</h1>
+                    <p class="muted" style="margin-bottom:16px">Prototype only: no real payment is processed.</p>
+                    <div class="split">
+                        <form id="payForm" class="card" novalidate aria-label="Payment form">
+                            <label for="appt">Appointment to pay for *<select id="appt" class="in"
+                                    aria-describedby="apptE"></select><span id="apptE" class="er"></span></label>
+                            <div id="details" class="muted" style="margin-bottom:14px"></div>
+                            <fieldset>
+                                <legend>Payment method *</legend>
+                                <label class="pm sel"><input type="radio" name="pm" value="Card" checked> Credit / debit
+                                    card</label>
+                                <label class="pm"><input type="radio" name="pm" value="Bank transfer"> Bank
+                                    transfer</label>
+                                <label class="pm"><input type="radio" name="pm" value="Pay at counter"> Pay at
+                                    counter</label>
+                            </fieldset>
+                            <div id="cardBox">
+                                <label for="cname">Name on card *<input id="cname" class="in" autocomplete="cc-name"
+                                        aria-describedby="cnameE"><span id="cnameE" class="er"></span></label>
+                                <label for="cnum">Card number *<input id="cnum" class="in" inputmode="numeric"
+                                        placeholder="1234 5678 9012 3456" maxlength="19" autocomplete="cc-number"
+                                        aria-describedby="cnumE"><span id="cnumE" class="er"></span></label>
+                                <div class="g2"><label for="cexp">Expiry (MM/YY) *<input id="cexp" class="in"
+                                            placeholder="MM/YY" maxlength="5" aria-describedby="cexpE"><span id="cexpE"
+                                            class="er"></span></label>
+                                    <label for="ccvv">CVV *<input id="ccvv" class="in" inputmode="numeric" maxlength="3"
+                                            aria-describedby="ccvvE"><span id="ccvvE" class="er"></span></label>
+                                </div>
+                            </div>
+                            <button class="btn" type="submit" id="payBtn">Confirm Payment</button>
+                        </form>
+                        <aside class="card" aria-labelledby="psh">
+                            <h2 id="psh">Payment summary</h2>
+                            <div id="psum"></div>
+                            <div id="pdone" class="hide" style="margin-top:14px"></div>
+                        </aside>
+                    </div>
+                    <section class="card" aria-labelledby="hh">
+                        <h2 id="hh">Payment history</h2>
+                        <div class="tw">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Receipt</th>
+                                        <th>Date</th>
+                                        <th>Description</th>
+                                        <th>Amount</th>
+                                        <th>Method</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="hist"></tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+                <section data-page="admin" class="hide">
+                    <section id="overview" data-sec>
+                        <h1>Administrator overview</h1>
+                        <p class="muted">Hospital activity at a glance.</p>
+                        <div class="g4" id="stats"></div>
+                        <div class="g2">
+                            <div class="card">
+                                <h2>Appointments by department</h2>
+                                <div id="chart" role="img" aria-label="Bar chart of appointments by department"></div>
+                                <div id="chartTxt" class="muted"></div>
+                            </div>
+                            <div class="card">
+                                <h2>Recent patient registrations</h2>
+                                <div class="tw">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Registered</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="recent"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="patients" data-sec class="hide">
+                        <h1>Patient management</h1>
+                        <div class="card"><label for="psearch">Search patients<input id="psearch" class="in"
+                                    placeholder="Name or ID"></label>
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Age</th>
+                                            <th>Phone</th>
+                                            <th>Registered</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ptable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="doctors" data-sec class="hide">
+                        <h1>Doctor management</h1>
+                        <form id="docForm" class="card" novalidate aria-label="Add doctor">
+                            <h2>Add a doctor</h2>
+                            <div class="g2">
+                                <label for="dn">Doctor name *<input id="dn" class="in" placeholder="Dr. Name"
+                                        aria-describedby="dnE"><span id="dnE" class="er"></span></label>
+                                <label for="dd">Department *<input id="dd" class="in" aria-describedby="ddE"><span
+                                        id="ddE" class="er"></span></label>
+                            </div>
+                            <label for="df">Consultation fee (Rs.) *<input id="df" class="in" type="number" min="0"
+                                    aria-describedby="dfE"><span id="dfE" class="er"></span></label>
+                            <button class="btn" type="submit">Add Doctor</button>
+                        </form>
+                        <div class="card">
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Department</th>
+                                            <th>Fee</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="dtable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="appointments" data-sec class="hide">
+                        <h1>Appointment management</h1>
+                        <div class="card">
+                            <div class="g2"><label for="asearch">Search<input id="asearch" class="in"
+                                        placeholder="Patient, doctor or ID"></label>
+                                <label for="afilter">Status<select id="afilter" class="in">
+                                        <option value="">All statuses</option>
+                                        <option>Pending</option>
+                                        <option>Confirmed</option>
+                                        <option>Completed</option>
+                                        <option>Cancelled</option>
+                                    </select></label>
+                            </div>
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Patient</th>
+                                            <th>Doctor</th>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="atable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="records" data-sec class="hide">
+                        <h1>Medical records</h1>
+                        <div class="card"><label for="rpat">Patient<select id="rpat" class="in"></select></label></div>
+                        <div id="rview"></div>
+                        <form id="labForm" class="card" novalidate aria-label="Add lab report">
+                            <h2>Add lab report</h2>
+                            <div class="g2">
+                                <label for="lt">Test *<input id="lt" class="in" aria-describedby="ltE"><span id="ltE"
+                                        class="er"></span></label>
+                                <label for="lr">Result *<input id="lr" class="in" aria-describedby="lrE"><span id="lrE"
+                                        class="er"></span></label>
+                                <label for="lg">Normal range *<input id="lg" class="in" aria-describedby="lgE"><span
+                                        id="lgE" class="er"></span></label>
+                                <label for="ls">Status<select id="ls" class="in">
+                                        <option>Normal</option>
+                                        <option>High</option>
+                                    </select></label>
+                            </div><button class="btn" type="submit">Add Lab Report</button>
+                        </form>
+                        <form id="rxForm" class="card" novalidate aria-label="Add prescription">
+                            <h2>Add prescription</h2>
+                            <div class="g2">
+                                <label for="rm">Medicine *<input id="rm" class="in" aria-describedby="rmE"><span
+                                        id="rmE" class="er"></span></label>
+                                <label for="rd">Dose *<input id="rd" class="in" aria-describedby="rdE"><span id="rdE"
+                                        class="er"></span></label>
+                                <label for="ru">Duration *<input id="ru" class="in" aria-describedby="ruE"><span
+                                        id="ruE" class="er"></span></label>
+                            </div><button class="btn" type="submit">Add Prescription</button>
+                        </form>
+                    </section>
+                    <section id="payments" data-sec class="hide">
+                        <h1>Payment management</h1>
+                        <p class="muted" id="rev"></p>
+                        <div class="card" style="margin-top:12px">
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Receipt</th>
+                                            <th>Patient</th>
+                                            <th>Date</th>
+                                            <th>Description</th>
+                                            <th>Amount</th>
+                                            <th>Method</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="paytable"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="reports" data-sec class="hide">
+                        <h1>Reports and analytics</h1>
+                        <div class="g4" id="rstats"></div>
+                        <div class="card">
+                            <h2>Appointments by status</h2>
+                            <div class="tw">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Status</th>
+                                            <th>Count</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="rstatus"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </main>
+        </div>
+    </div>
+    <div id="toast" class="toasts" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
